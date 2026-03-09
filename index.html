@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sudoku Game - 20 Rounds</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="welcome-screen">
+  <h1>Welcome to Sudoku Challenge!</h1>
+  <p>Enter your name to start:</p>
+  <input type="text" id="player-name" placeholder="Your Name" />
+  <button onclick="startGame()">Start Game</button>
+</div>
+
+<div id="game-screen" style="display:none;">
+  <h2>Hello, <span id="player-display"></span>! Let's play!</h2>
+  <h3>Sudoku Game - 20 Rounds</h3>
+  <div id="round-info">Round: 1 / 20</div>
+  <table id="sudoku-grid"></table>
+  <br/>
+  <button onclick="checkSolution()">Check Solution</button>
+  <button onclick="nextRound()">Next Puzzle</button>
+  <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
